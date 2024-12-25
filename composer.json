@@ -1,0 +1,35 @@
+{
+  "name": "samfelgar/cartos",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Samfelgar\\Cartos\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Samfelgar\\Cartos\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Samuel Felipe",
+      "email": "samfelgar@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^8.2",
+    "brick/phonenumber": "^0.6.0",
+    "guzzlehttp/guzzle": "^7.9",
+    "psr/http-message": "^2.0",
+    "psr/log": "^3.0",
+    "webmozart/assert": "^1.11"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  }
+}
