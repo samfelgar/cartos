@@ -5,13 +5,12 @@ namespace Samfelgar\Cartos\Tests\CashIn\Models\Webhook;
 use GuzzleHttp\Psr7\Request;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
-use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\TestCase;
 use Samfelgar\Cartos\CashIn\Models\Webhook\CashInPayload;
 use Samfelgar\Cartos\CashIn\Models\Webhook\Payer;
 
 #[CoversClass(CashInPayload::class)]
-#[UsesClass(Payer::class)]
+#[CoversClass(Payer::class)]
 class CashInPayloadTest extends TestCase
 {
     #[Test]
