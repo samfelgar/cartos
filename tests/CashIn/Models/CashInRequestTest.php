@@ -113,6 +113,7 @@ class CashInRequestTest extends TestCase
         return [
             ['laksjflkajsdjlfkja'],
             ['laksjflkajsdjlfkjalaksdkjfaoisdfjoaisdfi'],
+            ['laksjflka-jsdjlfkjalak-sdkjfaoisdfjoaisdfi'],
         ];
     }
 }

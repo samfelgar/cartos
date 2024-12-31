@@ -14,7 +14,7 @@ readonly class CashInRequest implements \JsonSerializable
         public float $amount,
         public int $expiresIn,
     ) {
-        Assert::nullOrLengthBetween($this->txId, 26, 36);
+        Assert::nullOrRegex($this->txId, '/^[a-zA-Z0-9]{26,36}$/');
         Assert::greaterThan($this->amount, 0);
         Assert::greaterThan($this->expiresIn, 0);
     }
