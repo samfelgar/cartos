@@ -22,8 +22,8 @@ class CashInResponse
             $data['mensagem'],
             $data['txId'],
             new QrCode(
-                $data['qrcode']['Imagem'],
-                $data['qrcode']['EMV'],
+                $data['qrcode']['imagem'],
+                $data['qrcode']['emv'],
             ),
         );
     }

@@ -22,8 +22,8 @@ class CashInResponseTest extends TestCase
   "mensagem": "Gerando QRCode com sucesso.",
   "txId": "sxe3i0qleeqaunhnnndmxno0kg59gh",
   "qrcode": {
-    "Imagem": "asdf",
-    "EMV": "fdsa"
+    "imagem": "asdf",
+    "emv": "fdsa"
   }
 }';
         $data = \json_decode($json, true);
@@ -40,8 +40,8 @@ class CashInResponseTest extends TestCase
   "mensagem": "Gerando QRCode com sucesso.",
   "txId": "sxe3i0qleeqaunhnnndmxno0kg59gh",
   "qrcode": {
-    "Imagem": "asdf",
-    "EMV": "fdsa"
+    "imagem": "asdf",
+    "emv": "fdsa"
   }
 }';
         $response = new Response(body: $json);
